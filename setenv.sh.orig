@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Secrets
+export GH_PAT=""
+export GH_SOURCE_PAT=""
+export AZURE_STORAGE_CONNECTION_STRING=""
+
+## Uncomment and populate if migrating from GHES
+#export GHES_API_URL=
+
+## Orgs
+export SOURCE_ORG="admin-ops"
+export DESTINATION_ORG="robandpdx-vandelay"
+
+## Repos
+export CURRENT_REPO_NAME="request-marketplace-action"
+export NEW_REPO_NAME='request-marketplace-action'
