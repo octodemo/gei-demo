@@ -9,9 +9,9 @@ export AZURE_STORAGE_CONNECTION_STRING=""
 #export GHES_API_URL=
 
 ## Orgs
-export SOURCE_ORG="admin-ops"
+export SOURCE_ORG="acme"
 export DESTINATION_ORG="robandpdx-vandelay"
 
 ## Repos
-export CURRENT_REPO_NAME="request-marketplace-action"
-export NEW_REPO_NAME='request-marketplace-action'
+export CURRENT_REPO_NAME="testrepo"
+export NEW_REPO_NAME='testrepo-migrated'
