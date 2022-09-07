@@ -3,12 +3,10 @@
 
 if [ -z "$CURRENT_REPO_NAME" ] ; then
    CURRENT_REPO_NAME="$1"
-   echo "old repo: $CURRENT_REPO_NAME"
 fi
 
 if [ -z "$NEW_REPO_NAME" ] ; then
    NEW_REPO_NAME="$2"
-    echo "new repo: $NEW_REPO_NAME"
 fi
 
 if [ -z "$GHES_API_URL" ]; then
