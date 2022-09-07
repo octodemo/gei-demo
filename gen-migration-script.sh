@@ -2,7 +2,7 @@
 
 . setenv.sh
 
-FILENAME="migration-script.sh"
+FILENAME="migration-script.ps1"
 
 if [ -z "$GHES_API_URL" ]; then
     GHES_INCLUDE=""
