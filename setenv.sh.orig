@@ -15,3 +15,5 @@ export DESTINATION_ORG="robandpdx-vandelay"
 ## Repos
 export CURRENT_REPO_NAME="testrepo"
 export NEW_REPO_NAME='testrepo-migrated'
+
+export LOCK_SOURCE_REPO="false"
