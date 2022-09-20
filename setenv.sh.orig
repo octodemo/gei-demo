@@ -1,19 +1,18 @@
 #!/bin/bash
 
 ## Secrets
-export GH_PAT=""
-export GH_SOURCE_PAT=""
-export AZURE_STORAGE_CONNECTION_STRING=""
+export GH_PAT=
+export GH_SOURCE_PAT=
+export AZURE_STORAGE_CONNECTION_STRING=
 
 ## Uncomment and populate if migrating from GHES
-#export GHES_API_URL=
+#export GHES_API_URL=""
 
 ## Orgs
-export SOURCE_ORG="acme"
-export DESTINATION_ORG="robandpdx-vandelay"
+export SOURCE_ORG=""
+export DESTINATION_ORG=""
 
 ## Repos
-export CURRENT_REPO_NAME="testrepo"
-export NEW_REPO_NAME='testrepo-migrated'
-
+export CURRENT_REPO_NAME=""
+export NEW_REPO_NAME=""
 export LOCK_SOURCE_REPO="false"
