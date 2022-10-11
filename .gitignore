@@ -1,2 +1,3 @@
 setenv.sh
 *.log
+migration-script.sh
