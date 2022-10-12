@@ -18,3 +18,5 @@ fi
 
 gh gei generate-script --github-source-org $SOURCE_ORG --github-target-org $DESTINATION_ORG --output $FILENAME \
    $GHES_INCLUDE --download-migration-logs $LOCK_SOURCE_REPO_FLAG
+
+chmod +x $FILENAME
