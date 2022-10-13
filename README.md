@@ -7,6 +7,8 @@ This repo can be used to demo [GitHub Enterprise Importer (GEI)](https://docs.gi
 
 ## Demo
 1. Copy `setenv.sh.orig` to `setenv.sh` and populate it with values for your migration.
+1. Run `gh-migration-analyzer.sh` to demo the use of [gh-migration-analyzer](https://github.com/github/gh-migration-analyzer).
+1. Run `gh-repo-stats.sh` to demo [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats).
 1. Run `migrate-repo.sh` to demo a repo migration.
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. Run `gen-mannequin-mapping.sh` to demo generating a mannequin mapping file after a migration.
