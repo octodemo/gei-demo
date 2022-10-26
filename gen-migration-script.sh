@@ -14,5 +14,13 @@ else
     fi  
 fi
 
+if [ "$LOCK_SOURCE_REPO" = "true" ]; then
+    LOCK_SOURCE_REPO_FLAG="--lock-source-repo"
+else
+    LOCK_SOURCE_REPO_FLAG=""
+fi
+
 gh gei generate-script --github-source-org $SOURCE_ORG --github-target-org $DESTINATION_ORG --output $FILENAME \
-   $GHES_INCLUDE --download-migration-logs
+   $GHES_INCLUDE --download-migration-logs $LOCK_SOURCE_REPO_FLAG
+
+chmod +x $FILENAME
