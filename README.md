@@ -6,15 +6,21 @@ This repo can be used to demo [GitHub Enterprise Importer (GEI)](https://docs.gi
 [GitHub Enterprise Importer CLI](https://github.com/github/gh-gei)  
 
 ## Demo
-1. Copy `setenv.sh.orig` to `setenv.sh` and populate it with values for your migration.
+1. Make sure [gh-gei](https://github.com/github/gh-gei) is up to date by running
+
+```bash
+gh extension upgrade github/gh-gei
+```
+
+2. Copy `setenv.sh.orig` to `setenv.sh` and populate it with values for your migration.
 1. Run `gh-migration-analyzer.sh` to demo the use of [gh-migration-analyzer](https://github.com/github/gh-migration-analyzer).
 1. Run `gh-repo-stats.sh` to demo [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats).
 1. Run `migrate-repo.sh` to demo a repo migration.
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. Run `gen-mannequin-mapping.sh` to demo generating a mannequin mapping file after a migration.
-1. Source repo locking/unlocking:  
-    Demonstrate source repo locking by setting `LOCK_SOURCE_REPO` to `true` in `setenv.sh` and running `migrate-repo.sh`.  
-    Unlock the source repo by running `source-lock-remove.sh`.
+1. Source repository locking/unlocking:  
+    Demonstrate source repository locking by setting `LOCK_SOURCE_REPO` to `true` in `setenv.sh` and running `migrate-repo.sh`.  
+    Unlock the source repository by running `source-lock-remove.sh`.
 
 
 ## Notes
