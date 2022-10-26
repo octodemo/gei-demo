@@ -5,7 +5,13 @@
 if [ -z "$GHES_API_URL" ]; then
     GHES_INCLUDE=""
 else
-    GHES_INCLUDE="--ghes-api-url $GHES_API_URL --azure-storage-connection-string $AZURE_STORAGE_CONNECTION_STRING"
+    if [ -z "$AWS_SECRET_KEY" ]; then
+        echo "Using Azure Storage Account for blob storage"
+        GHES_INCLUDE="--ghes-api-url $GHES_API_URL --azure-storage-connection-string $AZURE_STORAGE_CONNECTION_STRING"
+    else
+        echo "Using AWS S3 for blob storage"
+        GHES_INCLUDE="--ghes-api-url $GHES_API_URL --aws-bucket-name $AWS_BUCKET_NAME"
+    fi  
 fi
 
 if [ "$LOCK_SOURCE_REPO" = "true" ]; then
