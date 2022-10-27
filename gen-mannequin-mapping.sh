@@ -2,6 +2,6 @@
 
 . setenv.sh
 
-FILENAME="usermapping"
+FILENAME="usermapping.csv"
 
-gh gei generate-mannequin-csv --github-target-org $DESTINATION_ORG --output $FILENAME.csv
+gh gei generate-mannequin-csv --github-target-org $DESTINATION_ORG --output $FILENAME
