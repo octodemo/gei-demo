@@ -8,7 +8,7 @@ if [ -z "$GHES_API_URL" ]; then
     GHES_INCLUDE=""
 else
     if [ -z "$AWS_SECRET_KEY" ]; then
-        GHES_INCLUDE="--ghes-api-url $GHES_API_URL --azure-storage-connection-string $AZURE_STORAGE_CONNECTION_STRING"
+        GHES_INCLUDE="--ghes-api-url $GHES_API_URL"
     else
         GHES_INCLUDE="--ghes-api-url $GHES_API_URL --aws-bucket-name $AWS_BUCKET_NAME"
     fi  
@@ -21,6 +21,6 @@ else
 fi
 
 gh gei generate-script --github-source-org "$SOURCE_ORG" --github-target-org "$DESTINATION_ORG" --output "$FILENAME" \
-   "$GHES_INCLUDE" --download-migration-logs "$LOCK_SOURCE_REPO_FLAG"
+   --download-migration-logs $LOCK_SOURCE_REPO_FLAG $GHES_INCLUDE
 
 chmod +x $FILENAME
