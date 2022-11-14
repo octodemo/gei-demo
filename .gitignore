@@ -1,4 +1,4 @@
 setenv.sh
 *.log
-migration-script.sh
+migration-script.ps1
 *.csv
