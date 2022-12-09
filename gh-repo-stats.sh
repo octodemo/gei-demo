@@ -12,7 +12,7 @@ fi
 
 # Check if jq is installed
 if ! [ -x "$(command -v jq)" ]; then    
-    echo "jq is not installed. Please install gh-repo-stats: https://stedolan.github.io/jq/."
+    echo "jq is not installed. Please install jq: https://stedolan.github.io/jq/."
     exit 1
 fi
 
