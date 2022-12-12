@@ -12,7 +12,7 @@ export AZURE_STORAGE_CONNECTION_STRING=
 # export AWS_SECRET_KEY=
 
 ## Uncomment and populate if migrating from GHES
-#export GHES_API_URL="https//github.company.com/api/v3"
+#export GHES_API_URL="https://github.company.com/api/v3"
 
 ## Orgs
 export SOURCE_ORG=""
