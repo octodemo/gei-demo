@@ -22,4 +22,4 @@ else
     GHES_INCLUDE="--url ${GHES_API_URL%/api/v3}"
 fi
 
-gh repo-stats --org $SOURCE_ORG --token $GH_SOURCE_PAT
+gh repo-stats --org $SOURCE_ORG --token $GH_SOURCE_PAT $GHES_INCLUDE
