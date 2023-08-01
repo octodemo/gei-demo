@@ -7,7 +7,13 @@ FILENAME="$SOURCE_ORG-repo-stats.csv"
 # Check if gh-repo-stats is installed
 if ! gh repo-stats --help>/dev/null  ; then    
     echo "gh-repo-stats is not installed. Please install gh-repo-stats: https://github.com/mona-actions/gh-repo-stats."
-    exit 1
+    gh extension install mona-actions/gh-repo-stats
+    if [ $? -eq 0 ]; then
+        echo "Continue..."      
+    else
+      echo "Unable to install gh-repo-stats."
+      exit 1
+    fi
 fi
 
 # Check if jq is installed
