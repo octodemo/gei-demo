@@ -36,3 +36,10 @@ The process to migrate repos that contain files larger than 100mb is as follows:
 2. Migrate the repo using [GEI](https://github.com/github/gh-gei)
 3. Migrate the LFS files [as described here](https://github.github.com/enterprise-migrations/#/./4.3.0-post-migration-global-caveats).
 
+> **Note:** Due to [an issue with LFS](https://github.com/git-lfs/git-lfs/issues/4899), it's better to run the following, rather than `git lfs push github --all`
+>
+>```
+>for object_id in $(git lfs ls-files --long | awk '{print $1}'); do
+>    git lfs push --object-id github "$object_id"
+>done
+>```
