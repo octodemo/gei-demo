@@ -1,0 +1,22 @@
+version: 1
+ownership:
+- name: gei-demo
+  description: Demo tools and process for migrations with GitHub Enterprise Importer (GEI)
+  kind: code
+  maintainer: robandpdx
+  team: github/ps-amer
+  team_slack: services-delivery
+  exec_sponsor: naval-gupta
+  repo: https://github.com/octodemo/gei-demo
+  sev1:
+    issue: https://github.com/octodemo/gei-demo/issues 
+    tta: '1 business day'
+  sev2:
+    issue: https://github.com/octodemo/gei-demo/issues 
+    tta: '5 business days'
+  sev3:
+    issue: https://github.com/octodemo/gei-demo/issues 
+    slack: services-delivery
+    tta: '7 business days'
+  qos: experimental
+  tier: 3
