@@ -13,8 +13,11 @@ if [ -z "$GHES_API_URL" ]; then
 else
     GHES_INCLUDE="--server ${GHES_API_URL%/v3}/graphql"
 fi
-
-git clone https://github.com/github/gh-migration-analyzer.git
+if [ ! -d gh-migration-analyzer ]; then
+    git clone https://github.com/github/gh-migration-analyzer.git
+    cd gh-migration-analyzer
+    npm install
+    cd ..
+fi
 cd gh-migration-analyzer
-npm install
 node src/index.js GH-org --organization $SOURCE_ORG --token $GH_SOURCE_PAT $GHES_INCLUDE
