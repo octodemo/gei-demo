@@ -20,5 +20,5 @@ else
     LOCK_SOURCE_REPO_FLAG=""
 fi
 
-gh gei migrate-repo --github-source-org "$SOURCE_ORG" --source-repo "$CURRENT_REPO_NAME" --github-target-org "$DESTINATION_ORG" --target-repo "$NEW_REPO_NAME" \
+gh gei migrate-repo --github-source-org "$SOURCE_ORG" --source-repo "$SOURCE_REPO_NAME" --github-target-org "$TARGET_ORG" --target-repo "$TARGET_REPO_NAME" \
     $GHES_INCLUDE $LOCK_SOURCE_REPO_FLAG

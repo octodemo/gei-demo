@@ -16,10 +16,10 @@ export AZURE_STORAGE_CONNECTION_STRING=
 
 ## Orgs
 export SOURCE_ORG=""
-export DESTINATION_ORG=""
-export ENTERPRISE=""
+export TARGET_ORG=""
+export TARGET_ENTERPRISE=""
 
 ## Repos
-export CURRENT_REPO_NAME=""
-export NEW_REPO_NAME=""
+export SOURCE_REPO_NAME=""
+export TARGET_REPO_NAME=""
 export LOCK_SOURCE_REPO="false"

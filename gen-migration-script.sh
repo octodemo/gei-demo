@@ -20,7 +20,7 @@ else
     LOCK_SOURCE_REPO_FLAG=""
 fi
 
-gh gei generate-script --github-source-org "$SOURCE_ORG" --github-target-org "$DESTINATION_ORG" --output "$FILENAME" \
+gh gei generate-script --github-source-org "$SOURCE_ORG" --github-target-org "$TARGET_ORG" --output "$FILENAME" \
    --download-migration-logs $LOCK_SOURCE_REPO_FLAG $GHES_INCLUDE
 
 chmod +x $FILENAME

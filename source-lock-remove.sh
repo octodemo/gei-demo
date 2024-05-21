@@ -12,4 +12,4 @@ curl \
   -X DELETE \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: token $GH_SOURCE_PAT" \
-  $GHES_API_URL/orgs/$SOURCE_ORG/migrations/$ID/repos/$CURRENT_REPO_NAME/lock
+  $GHES_API_URL/orgs/$SOURCE_ORG/migrations/$ID/repos/$SOURCE_REPO_NAME/lock
