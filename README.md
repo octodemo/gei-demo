@@ -8,6 +8,7 @@ This repo can be used to demo [GitHub Enterprise Importer (GEI)](https://docs.gi
 [Nodejs](https://nodejs.org)  
 [gh-migration-analyzer](https://github.com/github/gh-migration-analyzer)  
 [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats)  
+[gh-migration-audit](https://github.com/timrogers/gh-migration-audit)  
 [Blob storage](https://docs.github.com/en/early-access/enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-github-enterprise-server-to-github-enterprise-cloud#step-4-set-up-blob-storage) if migrating from GHES  
 
 ## Demo
@@ -20,6 +21,7 @@ gh extension upgrade github/gh-gei
 2. Copy `setenv.sh.orig` to `setenv.sh` and populate it with values for your migration.
 1. Run `gh-migration-analyzer.sh` to demo the use of [gh-migration-analyzer](https://github.com/github/gh-migration-analyzer).
 1. Run `gh-repo-stats.sh` to demo [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats).
+1. Run `gh-migration-audit.sh` to demo [gh-migration-audit](https://github.com/timrogers/gh-migration-audit).
 1. Run `migrate-repo.sh` to demo a repo migration.
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. (Optional, only for GitHub.com to GHEC) Run `migrate-org.sh` to demo an org migration.
