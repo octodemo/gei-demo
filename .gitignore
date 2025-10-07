@@ -2,3 +2,5 @@ setenv.sh
 *.log
 migration-script.ps1
 *.csv
+.envrc
+.env
