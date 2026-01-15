@@ -1,0 +1,38 @@
+#!/bin/bash
+
+## Secrets
+export GH_PAT=
+export GH_SOURCE_PAT=
+
+## Blobl Storage Secrets (only one blob storage is needed)
+## These are not needed if you've configured migration blob storage in GHES
+#export AZURE_STORAGE_CONNECTION_STRING=
+
+# export AWS_BUCKET_NAME=
+# export AWS_ACCESS_KEY=
+# export AWS_SECRET_KEY=
+
+## Uncomment and populate if migrating from GHES
+#export GHES_API_URL="https://github.company.com/api/v3"
+
+## Orgs
+export SOURCE_ORG="mindfulrob"
+export TARGET_ORG="robandpdx-volcano"
+export TARGET_ENTERPRISE="volcano-coffee" # for org migrations only
+
+## Repos
+export SOURCE_REPO_NAME="antora-openpr"
+export TARGET_REPO_NAME="antora"
+export LOCK_SOURCE_REPO="false"
+
+# For gh unlock-source-repo
+export GITHUB_API_ENDPOINT=${GHES_API_URL#https://}
+
+# For gh-migration-validator
+export GHMV_SOURCE_ORGANIZATION=${SOURCE_ORG}
+export GHMV_TARGET_ORGANIZATION=${TARGET_ORG}
+export GHMV_SOURCE_TOKEN="$GH_SOURCE_PAT"
+export GHMV_TARGET_TOKEN="$GH_PAT"
+export GHMV_SOURCE_REPO="${SOURCE_REPO_NAME}"
+export GHMV_TARGET_REPO="${TARGET_REPO_NAME}"
+export GHMV_MARKDOWN_TABLE="true"

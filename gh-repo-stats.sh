@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. setenv.sh
-
 FILENAME="$SOURCE_ORG-repo-stats.csv"
 
 # Check if gh-repo-stats is installed

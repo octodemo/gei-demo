@@ -6,7 +6,10 @@ This repo can be used to demo [GitHub Enterprise Importer (GEI)](https://docs.gi
 [GitHub Enterprise Importer CLI](https://github.com/github/gh-gei)  
 [Powershell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.3)  
 [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats)  
+[gh-repo-stats-plus](https://github.com/mona-actions/gh-repo-stats-plus)  
 [gh-migration-audit](https://github.com/timrogers/gh-migration-audit)  
+[gh-migration-validator](https://github.com/mona-actions/gh-migration-validator)  
+[gh-unlock-source-repo](https://github.com/robandpdx/gh-unlock-source-repo)  
 [Blob storage](https://docs.github.com/en/early-access/enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-github-enterprise-server-to-github-enterprise-cloud#step-4-set-up-blob-storage) if migrating from GHES  
 
 ## Demo

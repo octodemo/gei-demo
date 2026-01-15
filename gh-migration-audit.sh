@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. setenv.sh
-
 # Check if gh-migration-audit is installed
 if ! gh migration-audit --help>/dev/null  ; then    
     echo "gh-migration-audit is not installed. Please install gh-migration-audit: https://github.com/timrogers/gh-migration-audit."
