@@ -21,14 +21,16 @@ gh extension upgrade github/gh-gei
 
 2. Copy `setenv.sh.orig` to `setenv.sh` and populate it with values for your migration.
 1. Run `gh-repo-stats.sh` to demo [gh-repo-stats](https://github.com/mona-actions/gh-repo-stats).
+1. Run `gh-repo-stats-plus.sh` to demo [gh-repo-stats-plus](https://github.com/mona-actions/gh-repo-stats-plus).
 1. Run `gh-migration-audit.sh` to demo [gh-migration-audit](https://github.com/timrogers/gh-migration-audit).
 1. Run `migrate-repo.sh` to demo a repo migration.
+1. Run `gh migration-validator to demo [gh-migration-validator](https://github.com/mona-actions/gh-migration-validator).
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. (Optional, only for GitHub.com to GHEC) Run `migrate-org.sh` to demo an org migration.
 1. Run `gen-mannequin-mapping.sh` to demo generating a mannequin mapping file after a migration.
 1. Fill out the third field of the `usermapping.csv` file, make sure the users are members of the org, then run `reclaim-mannequins.sh`.  
 1. Source repository locking/unlocking:  
-    Demonstrate source repository locking by setting `LOCK_SOURCE_REPO` to `true` in `setenv.sh` and running `migrate-repo.sh`.  
+    Demonstrate source repository locking by setting `LOCK_SOURCE_REPO` to `true` in `.envrc` and running `migrate-repo.sh`.  
     Unlock the source repository by running `source-lock-remove.sh`.
 
 
