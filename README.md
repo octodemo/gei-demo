@@ -24,7 +24,7 @@ gh extension upgrade github/gh-gei
 1. Run `gh-repo-stats-plus.sh` to demo [gh-repo-stats-plus](https://github.com/mona-actions/gh-repo-stats-plus).
 1. Run `gh-migration-audit.sh` to demo [gh-migration-audit](https://github.com/timrogers/gh-migration-audit).
 1. Run `migrate-repo.sh` to demo a repo migration.
-1. Run `gh migration-validator to demo [gh-migration-validator](https://github.com/mona-actions/gh-migration-validator).
+1. Run `gh migration-validator` to demo [gh-migration-validator](https://github.com/mona-actions/gh-migration-validator).
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. (Optional, only for GitHub.com to GHEC) Run `migrate-org.sh` to demo an org migration.
 1. Run `gen-mannequin-mapping.sh` to demo generating a mannequin mapping file after a migration.
