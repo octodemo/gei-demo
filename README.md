@@ -10,6 +10,7 @@ This repo can be used to demo [GitHub Enterprise Importer (GEI)](https://docs.gi
 [gh-migration-audit](https://github.com/timrogers/gh-migration-audit)  
 [gh-migration-validator](https://github.com/mona-actions/gh-migration-validator)  
 [gh-unlock-source-repo](https://github.com/robandpdx/gh-unlock-source-repo)  
+[gh-history-rewrite-migration](https://github.com/mona-actions/gh-history-rewrite-migration)  
 [Blob storage](https://docs.github.com/en/early-access/enterprise-importer/migrating-repositories-with-github-enterprise-importer/migrating-repositories-from-github-enterprise-server-to-github-enterprise-cloud#step-4-set-up-blob-storage) if migrating from GHES  
 
 ## Demo
@@ -27,6 +28,7 @@ gh extension upgrade github/gh-gei
 1. Run `gh migration-validator` to demo [gh-migration-validator](https://github.com/mona-actions/gh-migration-validator).
 1. (Optional) Run `gen-migration-script.sh` to demo generating a migration script.
 1. (Optional, only for GitHub.com to GHEC) Run `migrate-org.sh` to demo an org migration.
+1. (Optional) Run `history-rewrite-migration.sh` to demo a history rewrite migration.   
 1. Run `gen-mannequin-mapping.sh` to demo generating a mannequin mapping file after a migration.
 1. Fill out the third field of the `usermapping.csv` file, make sure the users are members of the org, then run `reclaim-mannequins.sh`.  
 1. Source repository locking/unlocking:  
